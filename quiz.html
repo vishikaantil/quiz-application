@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Quiz - Quizify</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main-container">
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <div>
+                    <h2>Java Fundamentals</h2>
+                    <span id="questionNumber" style="color: var(--text-secondary);">Question 1 of 10</span>
+                </div>
+                <div class="timer" id="timer">Time: 05:00</div>
+            </div>
+
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="question-text" id="questionText">Loading question...</div>
+
+            <div class="options-container" id="optionsContainer">
+                <!-- Dynamically populated options -->
+            </div>
+
+            <div class="palette-container" id="paletteContainer">
+                <!-- Question palette -->
+            </div>
+
+            <div class="quiz-footer">
+                <button class="btn btn-secondary" id="prevBtn">Previous</button>
+                <div>
+                    <button class="btn btn-primary" id="nextBtn">Next</button>
+                    <button class="btn btn-primary" id="submitBtn" style="display: none; background-color: var(--accent-color);">Submit Quiz</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

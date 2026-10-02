@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Categories - Quizify</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">⚡ Quizify</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <div class="page-title">
+            <h2>Select a Category</h2>
+            <p>Pick a topic to start testing your knowledge.</p>
+        </div>
+
+        <div class="category-grid">
+            <div class="category-card">
+                <div>
+                    <div class="category-icon">☕</div>
+                    <h3>Java Programming</h3>
+                    <p>Core Java, OOPs, Collections, and Multithreading.</p>
+                </div>
+                <div>
+                    <div class="category-meta">
+                        <span>10 Questions</span>
+                        <span>Medium</span>
+                    </div>
+                    <a href="quiz.html?category=java" class="btn btn-primary" style="width: 100%;">Start Quiz</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div>
+                    <div class="category-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>HTML5, CSS3, JavaScript ES6+, and DOM manipulation.</p>
+                </div>
+                <div>
+                    <div class="category-meta">
+                        <span>10 Questions</span>
+                        <span>Easy</span>
+                    </div>
+                    <a href="quiz.html?category=webdev" class="btn btn-primary" style="width: 100%;">Start Quiz</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div>
+                    <div class="category-icon">🗄️</div>
+                    <h3>Databases & SQL</h3>
+                    <p>Relational Databases, MySQL, Queries, and Joins.</p>
+                </div>
+                <div>
+                    <div class="category-meta">
+                        <span>10 Questions</span>
+                        <span>Hard</span>
+                    </div>
+                    <a href="quiz.html?category=db" class="btn btn-primary" style="width: 100%;">Start Quiz</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

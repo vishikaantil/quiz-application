@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results - Quizify</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main-container">
+        <div class="result-card">
+            <h2>Quiz Results</h2>
+            <p id="performanceMessage" style="color: var(--text-secondary);"></p>
+
+            <div class="score-circle">
+                <span class="score-number" id="scoreDisplay">0</span>
+                <span id="percentageDisplay" style="font-size: 0.9rem; color: var(--text-secondary);">0%</span>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h4>Total Questions</h4>
+                    <p id="totalQ">0</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Correct Answers</h4>
+                    <p id="correctQ" style="color: var(--accent-color);">0</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Incorrect Answers</h4>
+                    <p id="incorrectQ" style="color: var(--danger-color);">0</p>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem;">
+                <a href="categories.html" class="btn btn-outline">Back to Categories</a>
+                <a href="quiz.html" class="btn btn-primary">Try Again</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/result.js"></script>
+</body>
+</html>
